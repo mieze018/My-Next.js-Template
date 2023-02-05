@@ -5,5 +5,15 @@
     // モジュールのimportができていない時に自動でimportする
     "source.addMissingImports": true
   },
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+  //twin.macro用
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)", // tw`...`
+    "tw=\"([^\"]*)", // <div tw="..." />
+    "tw={\"([^\"}]*)", // <div tw={"..."} />
+    "tw\\.\\w+`([^`]*)", // tw.xxx`...`
+    "tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
+  ],
+  "cSpell.words": ["stailwc"],
+  "editor.insertSpaces": false
 }

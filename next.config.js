@@ -1,13 +1,16 @@
+const stailwc = require("stailwc/install")
 /** @type {import('next').NextConfig} */
-// next.config.js
-const withTwin = require('./withTwin.js')
-
-/**
- * @type {import('next').NextConfig}
- */
-
-module.exports = withTwin({
-  reactStrictMode: true, // < Recommended by Next
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+}
+const stailwcConfig = {
+  experimental: {
+    swcPlugins: [stailwc()],
+  },
+  compiler: { styledComponents: true },
+}
+const svgrConfig = {
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
@@ -26,4 +29,9 @@ module.exports = withTwin({
   images: {
     disableStaticImages: true, // importした画像の型定義設定を無効にする
   },
-})
+}
+module.exports = {
+  ...nextConfig,
+  ...stailwcConfig,
+  ...svgrConfig,
+}
