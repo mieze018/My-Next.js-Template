@@ -21,6 +21,11 @@
 - Headless UI <https://headlessui.com/>
 - Radix UI <https://www.radix-ui.com/docs/primitives/overview/introduction>
 
+### Icon Resources
+
+- heroicons <https://heroicons.com/>
+- Remix Icon <https://remixicon.com/>
+
 ### Linter, Formatter, Maintenance tools
 
 - ESLint <https://eslint.org/docs/latest/>
