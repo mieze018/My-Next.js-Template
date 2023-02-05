@@ -15,6 +15,7 @@
 
 - twin.macro <https://github.com/ben-rogerson/twin.macro>
   - [next-styled-components-typescript](https://github.com/ben-rogerson/twin.examples/tree/master/next-styled-components-typescript)
+  - stailwc <https://github.com/arlyon/stailwc>
   - Tailwind CSS <https://tailwindcss.com/docs/guides/nextjs>
   - Styled Components <https://styled-components.com/>
 - Headless UI <https://headlessui.com/>
