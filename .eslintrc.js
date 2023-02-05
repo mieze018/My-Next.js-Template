@@ -20,14 +20,12 @@ module.exports = {
     },
   },
   rules: {
-    // 'react/no-unknown-property': [
-    //   'error',
-    //   {
-    //     ignore: ['css'],
-    //   },
-    // ],
-    //threeのコンポーネントにエラーが出るので全て無効化
-    "react/no-unknown-property": 0,
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['css'],
+      },
+    ],
     'import/order': [
       'error',
       {
