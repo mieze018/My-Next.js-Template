@@ -1,5 +1,3 @@
-import tw from 'twin.macro'
-
 import type { CSSProp } from 'styled-components'
 
 import ChevronDown from '@/public/icons/chevron-down.svg'
