@@ -1,0 +1,9 @@
+{
+  // ファイル保存時にeslintのエラーを自動で直す
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    // モジュールのimportができていない時に自動でimportする
+    "source.addMissingImports": true
+  },
+  "editor.formatOnType": true
+}
